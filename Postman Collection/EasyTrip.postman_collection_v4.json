@@ -600,7 +600,7 @@
 					]
 				},
 				{
-					"name": "Get All Users",
+					"name": "Get All Users (Requires User Login)",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
