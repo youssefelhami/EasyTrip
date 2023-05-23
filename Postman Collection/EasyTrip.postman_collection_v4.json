@@ -1,0 +1,1713 @@
+{
+	"info": {
+		"_postman_id": "2d132ce1-4d65-4225-b296-60462d263a28",
+		"name": "EasyTrip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18235556",
+		"_collection_link": "https://lunar-comet-249790.postman.co/workspace/New-Team-Workspace~b92635c2-3140-4ee6-8e29-0a37820e87fb/collection/18235556-2d132ce1-4d65-4225-b296-60462d263a28?action=share&creator=18235556&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Get Auth Key",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "client_id",
+								"value": "id2",
+								"type": "text"
+							},
+							{
+								"key": "secret",
+								"value": "secret2",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/getkey",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"getkey"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Auth Key With Missing Credentials",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "client_id",
+										"value": "id2",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/getkey",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"getkey"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get Auth Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "client_id",
+										"value": "id2",
+										"type": "text"
+									},
+									{
+										"key": "secret",
+										"value": "secret3",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/getkey",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"getkey"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"user1\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/login",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/login",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "User Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user1\",\n    \"password\": \"password1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/login",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "User Login With Missing API Key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user1\",\n    \"password\": \"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/login",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Logged In User",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "headerPrefix",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/user",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Logged In User Without API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/user",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"user"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/logout",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "User Logout Without API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/auth/logout",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Add New User (Requires User Login)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"user16\",\n    \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add New User With Missing Username or Password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user14\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Add New User With Existing Username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user1\",\n    \"password\": \"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Add New User With Missing API Key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\" : \"user14\",\n    \"password\": \"password\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add New User With Missing API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/users",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"users"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Trips",
+			"item": [
+				{
+					"name": "Get all Trips",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "headerPrefix",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all Trips Without API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										""
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get Trip by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/6451282a67e319c791d37040",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								"6451282a67e319c791d37040"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Trip by ID with Invalid ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/645f8a8ece5cce63c39d99c3",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"645f8a8ece5cce63c39d99c3"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get Trip by ID Without API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/6451282a67e319c791d37040",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"6451282a67e319c791d37040"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Create Trip (Requires User Login)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\" : \"Los Angeles\",\n    \"country\" : \"United States\",\n    \"ticket\" : 1500,\n    \"daily_accommodation\" : 1700,\n    \"daily_food\" : 300,\n    \"daily_miscellaneous\" : 700,\n    \"image\" : \"https://cdn.britannica.com/22/154122-050-B1D0A7FD/Skyline-Los-Angeles-California.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create Trip With Invalid or Missing Input",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\" : \"Los Angeles\",\n    \"country\" : \"United States\",\n    \"ticket\" : -1,\n    \"daily_accommodation\" : 1700,\n    \"daily_food\" : 300,\n    \"daily_miscellaneous\" : 700,\n    \"image\" : \"https://cdn.britannica.com/22/154122-050-B1D0A7FD/Skyline-Los-Angeles-California.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Create Trip Without API Key",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\" : \"Los Angeles\",\n    \"country\" : \"United States\",\n    \"ticket\" : 1500,\n    \"daily_accommodation\" : 1700,\n    \"daily_food\" : 300,\n    \"daily_miscellaneous\" : 700,\n    \"image\" : \"https://cdn.britannica.com/22/154122-050-B1D0A7FD/Skyline-Los-Angeles-California.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Update Trip (Requires User Login)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"city\": \"lyon\",\n    \"country\": \"france\",\n    \"ticket\": 1400,\n    \"daily_accommodation\": 1100,\n    \"daily_food\": 250,\n    \"daily_miscellaneous\": 550,\n    \"image\": \"https://media.istockphoto.com/id/1176558435/photo/architecture-in-lyon.jpg?s=612x612&w=0&k=20&c=Pbf7sJcOoT0QhfGPAmd-olIi1ivDY7pygEhQ7Xsoz60=\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/64524dfdd375e759b70b0ed5",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								"64524dfdd375e759b70b0ed5"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Trip With Invalid Input",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"lyon\",\n    \"country\": \"france\",\n    \"ticket\": -1,\n    \"daily_accommodation\": 1100,\n    \"daily_food\": 250,\n    \"daily_miscellaneous\": 550,\n    \"image\": \"https://media.istockphoto.com/id/1176558435/photo/architecture-in-lyon.jpg?s=612x612&w=0&k=20&c=Pbf7sJcOoT0QhfGPAmd-olIi1ivDY7pygEhQ7Xsoz60=\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/64524dfdd375e759b70b0ed5",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"64524dfdd375e759b70b0ed5"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Update Trip With Invalid ID",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"lyon\",\n    \"country\": \"france\",\n    \"ticket\": 1400,\n    \"daily_accommodation\": 1100,\n    \"daily_food\": 250,\n    \"daily_miscellaneous\": 550,\n    \"image\": \"https://media.istockphoto.com/id/1176558435/photo/architecture-in-lyon.jpg?s=612x612&w=0&k=20&c=Pbf7sJcOoT0QhfGPAmd-olIi1ivDY7pygEhQ7Xsoz60=\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/645f8a8ece5cce63c39d99c3",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"645f8a8ece5cce63c39d99c3"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Update Trip Without API Key",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"city\": \"lyon\",\n    \"country\": \"france\",\n    \"ticket\": 1400,\n    \"daily_accommodation\": 1100,\n    \"daily_food\": 250,\n    \"daily_miscellaneous\": 550,\n    \"image\": \"https://media.istockphoto.com/id/1176558435/photo/architecture-in-lyon.jpg?s=612x612&w=0&k=20&c=Pbf7sJcOoT0QhfGPAmd-olIi1ivDY7pygEhQ7Xsoz60=\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/64524dfdd375e759b70b0ed5",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"64524dfdd375e759b70b0ed5"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Delete Trip (Requires User Login)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/646cf0a70cde03239520723e",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								"646cf0a70cde03239520723e"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete Trip With Invalid ID",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/6464756f3708c80e743390b6",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"6464756f3708c80e743390b6"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Delete Trip Without API Key",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/6464756f3708c80e743390b6",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"6464756f3708c80e743390b6"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get trips by Country",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/country?startDate=2023-05-26&endDate=2023-05-26&destCountry=france",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								"country"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2023-05-26"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-05-26"
+								},
+								{
+									"key": "destCountry",
+									"value": "france"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get trips by Country",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/country?startDate=2023-05-26&destCountry=france",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"country"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "destCountry",
+											"value": "france"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Country With Dates in the Past",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/country?startDate=2023-05-20&endDate=2023-05-21&destCountry=france",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"country"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-20"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-21"
+										},
+										{
+											"key": "destCountry",
+											"value": "france"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Country With Invalid Dates",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/country?startDate=2023-05-27&endDate=2023-05-26&destCountry=france",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"country"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-27"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "destCountry",
+											"value": "france"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Country Without API Key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/country?startDate=2023-05-26&endDate=2023-05-26&destCountry=france",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"country"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "destCountry",
+											"value": "france"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "Get trips by Budget",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "key",
+								"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-26&endDate=2023-05-27&budget=25000",
+							"protocol": "https",
+							"host": [
+								"easytrip-api-production",
+								"up",
+								"railway",
+								"app"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trips",
+								"budget"
+							],
+							"query": [
+								{
+									"key": "startDate",
+									"value": "2023-05-26"
+								},
+								{
+									"key": "endDate",
+									"value": "2023-05-27"
+								},
+								{
+									"key": "budget",
+									"value": "25000"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get trips by Budget With Missing Params",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-26&endDate=2023-05-27",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"budget"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-27"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Budget With Past Dates",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-20&endDate=2023-05-21&budget=25000",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"budget"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-20"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-21"
+										},
+										{
+											"key": "budget",
+											"value": "25000"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Budget With Invalid Dates",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-28&endDate=2023-05-27&budget=25000",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"budget"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-28"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-27"
+										},
+										{
+											"key": "budget",
+											"value": "25000"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Budget With Invalid Budget",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "key",
+										"value": "f35d21d34aa4cfce21ba1d4c453360a3180e1f7a90ec606fd70b9ecc309eca84",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-26&endDate=2023-05-27&budget=-1",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"budget"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-27"
+										},
+										{
+											"key": "budget",
+											"value": "-1"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Get trips by Budget With Missing API key",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://easytrip-api-production.up.railway.app/api/v1/trips/budget?startDate=2023-05-26&endDate=2023-05-27&budget=25000",
+									"protocol": "https",
+									"host": [
+										"easytrip-api-production",
+										"up",
+										"railway",
+										"app"
+									],
+									"path": [
+										"api",
+										"v1",
+										"trips",
+										"budget"
+									],
+									"query": [
+										{
+											"key": "startDate",
+											"value": "2023-05-26"
+										},
+										{
+											"key": "endDate",
+											"value": "2023-05-27"
+										},
+										{
+											"key": "budget",
+											"value": "25000"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		}
+	]
+}
