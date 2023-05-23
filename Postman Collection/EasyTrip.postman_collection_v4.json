@@ -640,7 +640,7 @@
 					},
 					"response": [
 						{
-							"name": "Add New User With Missing API Key",
+							"name": "Get All Users With Missing API Key",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
